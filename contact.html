@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏠 Contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <!-- Java script -->
+    <script src="js/aos.js"></script>
+    <script src="js/mode.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/splide-extension-auto-scroll.js.map"></script>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-xl">
+            <a class="navbar-brand fs-3 fw-bold" href="index.html">Real<span class="green">tor</span></a>
+            <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger-toggle">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="estate.html">Estates</a>
+                    </li>
+                    <li class="nav-item hover-underline-animation">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item dropdown hover-underline-animation">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Links</a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+
+                            <li><a class="dropdown-item btn btn-sm btn-outline-secondary" href="favorite.html">Favorites <i
+                                        class="bi bi-suit-heart-fill"></i></a></li>
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item" data-bs-toggle="dropdown">Currency <i
+                                        class="bi bi-currency-exchange"></i></a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href="">$ Dollar</a></li>
+                                    <li><a class="dropdown-item" href="">₽ Rubl</a></li>
+                                    <li><a class="dropdown-item" href="">TMT Manat</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item" data-bs-toggle="dropdown">Language <i
+                                        class="bi bi-translate"></i></a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" href=""><img class="img-fluid pe-2"
+                                                src="img/flag/tkm.png">
+                                            Turkmen</a></a></li>
+                                    <li><a class="dropdown-item" href=""><img class="img-fluid pe-2"
+                                                src="img/flag/rus.png">
+                                            Russian</a></a></li>
+                                    <li><a class="dropdown-item" href=""><img class="img-fluid pe-2"
+                                                src="img/flag/eng.png">
+                                            English</a></a></li>
+                                    <li class="dropend">
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                                <a href="#" class="dropdown-item" data-bs-toggle="dropdown">Themes <i
+                                        class="bi bi-circle-half"></i></a>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a onclick="light()" class="dropdown-item btn btn-sm btn-outline-secondary"
+                                            data-bs-theme-value="light"><i class="bi bi-sun-fill"></i></i> Light</a>
+                                    </li>
+                                    <li><a onclick="dark()" class="dropdown-item btn btn-sm btn-outline-secondary"
+                                            data-bs-theme-value="dark"><i class="bi bi-moon-stars-fill"></i> Dark</a>
+                                    </li>
+                                    <li><a onclick="auto()" class="dropdown-item btn btn-sm btn-outline-secondary"
+                                            data-bs-theme-value="auto"><i class="bi bi-circle-half"></i> Auto</a></li>
+                                    <li class="dropend">
+                                </ul>
+                            </li>
+                            <li class="dropend">
+                              <a href="#" class="dropdown-item" data-bs-toggle="dropdown" data-bs-auto-close="outside">Profil <i
+                                  class="bi bi-person-circle"></i></a>
+                              <ul class="dropdown-menu shadow">
+                                <li><a href="auth/login.html" class="dropdown-item btn btn-sm btn-outline-secondary"><i class="bi bi-door-open-fill"></i>
+                                    Login</a></li>
+                                <li><a href="auth/register.html" class="dropdown-item btn btn-sm btn-outline-secondary"><i class="bi bi-door-closed-fill"></i>
+                                    Register</a></li>
+                                <li><a class="dropdown-item btn btn-sm btn-outline-secondary"><i class="bi bi-person-fill-gear"></i>
+                                    Edit</a></li>
+                                <li><a class="dropdown-item btn btn-sm btn-outline-secondary"><i class="bi bi-box-arrow-in-right"></i>
+                                    Logout</a></li>
+                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Others</a>
+                                <ul class="dropdown-menu dropdown-submenu shadow">
+                                  <li><a class="dropdown-item btn btn-sm btn-outline-secondary"><i
+                                        class="bi bi-building-fill-add"></i> Add
+                                      estate</a></li>
+                                  <li><a class="dropdown-item btn btn-sm btn-outline-secondary"><i class="bi bi-buildings-fill"></i>
+                                      My
+                                      estates</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-xxl py-3">
+        <button
+            class="btn bg-secondary bg-opacity-75 btn-sm rounded-pill shadow-sm position-fixed bottom-0 end-0 my-3 mx-3 mx-lg-5 mx-xl-5"
+            style="display:none; z-index: 99;" onclick="topFunction()" id="myBtn"><i
+                class="bi bi-caret-up-fill text-lg green"></i></button>
+        <div class="d-flex justify-content-start align-items-center border-bottom py-2 mb-3">
+            <a href="contact.html" class="h3 mb-0 green2 text-decoration-none">Contact</a>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 col-xl-6 col-xxl-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201318.17307570978!2d58.25028409999999!3d37.96320754999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f6ffe1bab3684d9%3A0x3cde013f62d3ade9!2z0JDRiNGF0LDQsdCw0LQ!5e0!3m2!1sru!2s!4v1686566773653!5m2!1sru!2s"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-6 col-xxl-6 text-center">
+                <form>
+                    <div class="form-floating my-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Full Name" maxlength="32" required autocomplete="false">
+                        <label for="floatingInput">Full Name</label>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group">
+                            <button type="submit" class="btn text-white btn-primary">+993</button>
+                                    <input type="number" class="form-control" placeholder="61000000" min="61000000" max="65999999" required autocomplete="false">
+                        </div>
+                    </div>
+                    <div class="form-floating my-3">
+                        <input type="text" class="form-control" id="floatingInput" maxlength="32" placeholder="Company Name" required autocomplete="false">
+                        <label for="floatingInput">Company Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" maxlength="1024" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary mt-3"><i class="bi bi-send-fill"></i> Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid d-flex justify-content-center align-items-center bg-body-tertiary pt-5 mt-5">
+        <div class="container-xxl row">
+            <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-lg-8 col-xl-5">
+                <div class="fs-3 fw-bold my-3">Real<span class="green">tor</span></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae blanditiis quae ducimus
+                    facilis
+                    ad
+                    maiores? Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-12 col-sm-4 col-lg-3 col-xl-3 d-md-none d-lg-none d-xl-block">
+                <div class="fs-3 fw-bold my-3">Quick<span class="green"> links</span></div>
+                <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i>
+                    Contact</a>
+                <br>
+                <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i>
+                    Estates</a>
+                <br>
+                <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i>
+                    Services</a>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 col-xl-4">
+                <div class="text-decoration-none fs-3 fw-bold my-3" href="#">News<span class="green">letter</span>
+                </div>
+                <form>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button type="submit" class="btn text-white btn-primary">Submit</button>
+                    </div>
+                </form>
+                <p class="mt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="d-flex justify-content-center my-3">
+                <div><a class="text-decoration-none green" href="#"><i class="bi bi-instagram"></i></a></div>
+                <div class="mx-2"><a class="text-decoration-none green" href="#"><i class="bi bi-tiktok"></i></a>
+                </div>
+                <div><a class="text-decoration-none green" href="#"><i class="bi bi-twitter"></i></a></div>
+                <div class="mx-2"><a class="text-decoration-none green" href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+            </div>
+            <hr class="border-2">
+            <div class="text-center mb-3">All rights reserved | Designed by <a href="https://atamyrat2005.github.io"
+                    class="green">Atamyrat</a></div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function light() {
+        document.getElementById("bg-icon").setAttribute("class", "bi bi-sun-fill");
+    }
+    function dark() {
+        document.getElementById("bg-icon").setAttribute("class", "bi bi-moon-stars-fill");
+    }
+    function auto() {
+        document.getElementById("bg-icon").setAttribute("class", "bi bi-circle-half");
+    }
+</script>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</html>

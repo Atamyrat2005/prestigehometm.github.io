@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prestige Home</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/splide.min.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <!-- Java script -->
+  <script src="js/aos.js"></script>
+  <script src="js/mode.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/splide.min.js"></script>
+  <script src="js/fancybox.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/splide-extension-auto-scroll.js.map"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    @media all and (min-width: 992px) {
+      .dropdown-menu {
+        width: 13rem;
+      }
+
+      .mega-submenu {
+        left: 100%;
+        top: 0;
+        min-width: 25rem;
+      }
+
+      .ktm-mega-menu {
+        position: static;
+      }
+
+      .mega-menu {
+        left: 0;
+        right: 0;
+        width: 100%;
+      }
+
+      .dropdown-menu li {
+        position: relative;
+      }
+
+      .dropdown-menu .submenu {
+        display: none;
+        left: 100%;
+        top: 0;
+      }
+
+      .dropdown-menu>li:hover>.submenu,
+      .dropdown:hover>.dropdown-menu {
+        display: block;
+      }
+    }
+  </style>
+
+</head>
+
+<script>
+  $(window).resize(function () {
+    if ($(window).width() < 1360) {
+      $("nav").addClass("bg-body");
+    }
+    else {
+      $("nav").removeClass("bg-body");
+    }
+  });
+</script>
+
+<body>
+  <div class="bg-body" id="preloader"></div>
+  <div class="container-xxl">
+    <nav class="navbar navbar-expand-lg navbar-dark p-2">
+      <!-- Nav Toggle Button -->
+      <img src="img/logo.png" class="img-fluid d-flex d-lg-none" width="75">
+      <button class="navbar-toggler small rounded-3 border-0 bg-primary" type="button" data-bs-toggle="collapse"
+        data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="hamburger-toggle">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </button>
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-center lh-lg text-body-emphasis" id="main_nav">
+        <ul class="navbar-nav p-3 p-md-0">
+          <li class="nav-item"> <a class="nav-link text-body-emphasis" href="index.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link text-body-emphasis" href="partners.html">Partners</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-body-emphasis" href="#" data-bs-toggle="dropdown">About us </a>
+            <!-- Dropdown -->
+            <ul class="dropdown-menu border-0 rounded-top-0">
+              <li><a class="dropdown-item" href="#">Portfolio</a></li>
+              <li><a class="dropdown-item" href="#">Services</a></li>
+            </ul>
+          </li>
+          <!-- Mega Menu -->
+          <li class="nav-item dropdown ktm-mega-menu">
+            <a class="nav-link dropdown-toggle text-body-emphasis" href="#" data-bs-toggle="dropdown">Miele
+            </a>
+
+            <!-- Mega Menu -->
+            <div class="dropdown-menu mega-menu p-3 border-0 rounded-top-0" style="margin-top: -10px;">
+              <ul id="myDIV" class="nav nav-tabs my-2">
+                <li class="nav-item">
+                  <a onclick="first()" class="nav-link active text-body user-select-none" aria-current="page">Baking and
+                    steam
+                    cooking</a>
+                </li>
+                <li class="nav-item">
+                  <a onclick="second()" class="nav-link user-select-none">Hobs and CombiSets</a>
+                </li>
+                <li class="nav-item">
+                  <a onclick="third()" class="nav-link user-select-none">Cooker hoods</a>
+                </li>
+              </ul>
+
+              <div id="first">
+                <div class="d-flex">
+                  <div class="col-12 col-lg-6">
+                    <div class="mx-5 my-2">
+                      <h4 class="text-center">Baking and steam cooking</h4>
+                      &#x2022; Ovens and cookers <br>
+                      &#x2022; Microwave combination ovens <br>
+                      &#x2022; RangeCooker <br>
+                    </div>
+                    <div class="mx-3 my-2">
+                      <div class="border-bottom mt-2 p-1 small"><span class="text-primary">*</span> Some product
+                        categories are not available in all countries</div>
+                      <div class="form-floating my-2">
+                        <select class="form-select input-sm" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option disabled>Please select</option>
+                          <option value="1">Turkmenistan</option>
+                          <option value="2">America</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Please select the page for your country:</label>
+                      </div>
+                      <div class="h4">Countries with Miele@home</div>
+                      <div class="btn btn-primary">DISCOVER MORE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 d-none d-lg-block">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                          class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/slider/1.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/slider/2.jpg" class="d-block w-100">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="second" class="d-none">
+                <div class="d-flex">
+                  <div class="col-12 col-lg-6">
+                    <div class="mx-5 my-2">
+                      <h4 class="text-center">Hobs and CombiSets</h4>
+                      &#x2022; Induction hobs<br>
+                      &#x2022; Electric hobs<br>
+                      &#x2022; Gas hobs<br>
+                    </div>
+                    <div class="mx-3 my-2">
+                      <div class="border-bottom mt-2 p-1 small"><span class="text-primary">*</span> Some product
+                        categories are not available in all countries</div>
+                      <div class="form-floating my-2">
+                        <select class="form-select input-sm" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option disabled>Please select</option>
+                          <option value="1">Turkmenistan</option>
+                          <option value="2">America</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Please select the page for your country:</label>
+                      </div>
+                      <div class="h4">Countries with Miele@home</div>
+                      <div class="btn btn-primary">DISCOVER MORE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 d-none d-lg-block">
+                    <div id="carouselExampleIndicators2" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                          class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/slider/11.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/slider/22.jpg" class="d-block w-100">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-none" id="third">
+                <div class="d-flex">
+                  <div class="col-12 col-lg-6">
+                    <div class="mx-5 my-2">
+                      <h4 class="text-center">Cooker hoods</h4>
+                      &#x2022; Wall and island cooker hoods<br>
+                      &#x2022; Ceiling fan<br>
+                      &#x2022; Built-in cooker hoods<br>
+                    </div>
+                    <div class="mx-3 my-2">
+                      <div class="border-bottom mt-2 p-1 small"><span class="text-primary">*</span> Some product
+                        categories are not available in all countries</div>
+                      <div class="form-floating my-2">
+                        <select class="form-select input-sm" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option disabled>Please select</option>
+                          <option value="1">Turkmenistan</option>
+                          <option value="2">America</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Please select the page for your country:</label>
+                      </div>
+                      <div class="h4">Countries with Miele@home</div>
+                      <div class="btn btn-primary">DISCOVER MORE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 d-none d-lg-block">
+                    <div id="carouselExampleIndicators3" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                          class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/slider/111.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/slider/222.jpg" class="d-block w-100">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Mega Menu -->
+          <li class="nav-item dropdown ktm-mega-menu">
+            <a class="nav-link dropdown-toggle text-body-emphasis" href="#" data-bs-toggle="dropdown">Products
+            </a>
+
+            <!-- Mega Menu -->
+            <div class="dropdown-menu mega-menu p-3 border-0 rounded-top-0" style="margin-top: -10px;">
+              <ul id="myDIV2" class="nav nav-tabs my-2">
+                <li class="nav-item">
+                  <a onclick="first2()" class="nav-link active text-body user-select-none" aria-current="page">Baking and
+                    steam
+                    cooking</a>
+                </li>
+                <li class="nav-item">
+                  <a onclick="second2()" class="nav-link user-select-none">Hobs and CombiSets</a>
+                </li>
+                <li class="nav-item">
+                  <a onclick="third2()" class="nav-link user-select-none">Cooker hoods</a>
+                </li>
+              </ul>
+
+              <div id="first2">
+                <div class="d-flex">
+                  <div class="col-12 col-lg-6">
+                    <div class="mx-5 my-2">
+                      <h4 class="text-center">Baking and steam cooking</h4>
+                      &#x2022; Ovens and cookers <br>
+                      &#x2022; Microwave combination ovens <br>
+                      &#x2022; RangeCooker <br>
+                    </div>
+                    <div class="mx-3 my-2">
+                      <div class="border-bottom mt-2 p-1 small"><span class="text-primary">*</span> Some product
+                        categories are not available in all countries</div>
+                      <div class="form-floating my-2">
+                        <select class="form-select input-sm" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option disabled>Please select</option>
+                          <option value="1">Turkmenistan</option>
+                          <option value="2">America</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Please select the page for your country:</label>
+                      </div>
+                      <div class="h4">Countries with Miele@home</div>
+                      <div class="btn btn-primary">DISCOVER MORE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 d-none d-lg-block">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                          class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/slider/1.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/slider/2.jpg" class="d-block w-100">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="second2" class="d-none">
+                <div class="d-flex">
+                  <div class="col-12 col-lg-6">
+                    <div class="mx-5 my-2">
+                      <h4 class="text-center">Hobs and CombiSets</h4>
+                      &#x2022; Induction hobs<br>
+                      &#x2022; Electric hobs<br>
+                      &#x2022; Gas hobs<br>
+                    </div>
+                    <div class="mx-3 my-2">
+                      <div class="border-bottom mt-2 p-1 small"><span class="text-primary">*</span> Some product
+                        categories are not available in all countries</div>
+                      <div class="form-floating my-2">
+                        <select class="form-select input-sm" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option disabled>Please select</option>
+                          <option value="1">Turkmenistan</option>
+                          <option value="2">America</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Please select the page for your country:</label>
+                      </div>
+                      <div class="h4">Countries with Miele@home</div>
+                      <div class="btn btn-primary">DISCOVER MORE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 d-none d-lg-block">
+                    <div id="carouselExampleIndicators2" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                          class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/slider/11.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/slider/22.jpg" class="d-block w-100">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-none" id="third2">
+                <div class="d-flex">
+                  <div class="col-12 col-lg-6">
+                    <div class="mx-5 my-2">
+                      <h4 class="text-center">Cooker hoods</h4>
+                      &#x2022; Wall and island cooker hoods<br>
+                      &#x2022; Ceiling fan<br>
+                      &#x2022; Built-in cooker hoods<br>
+                    </div>
+                    <div class="mx-3 my-2">
+                      <div class="border-bottom mt-2 p-1 small"><span class="text-primary">*</span> Some product
+                        categories are not available in all countries</div>
+                      <div class="form-floating my-2">
+                        <select class="form-select input-sm" id="floatingSelect"
+                          aria-label="Floating label select example">
+                          <option disabled>Please select</option>
+                          <option value="1">Turkmenistan</option>
+                          <option value="2">America</option>
+                          <option value="3">Turkey</option>
+                        </select>
+                        <label for="floatingSelect">Please select the page for your country:</label>
+                      </div>
+                      <div class="h4">Countries with Miele@home</div>
+                      <div class="btn btn-primary">DISCOVER MORE</div>
+                    </div>
+                  </div>
+                  <div class="col-6 d-none d-lg-block">
+                    <div id="carouselExampleIndicators3" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                          class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                          aria-label="Slide 2"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/slider/111.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/slider/222.jpg" class="d-block w-100">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"> <a class="nav-link text-body-emphasis" href="">Contacts</a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-body-emphasis" href="#" data-bs-toggle="dropdown">Themes </a>
+            <!-- Dropdown -->
+            <ul class="dropdown-menu border-0 rounded-top-0">
+              <li><a onclick="light()" class="dropdown-item btn btn-sm btn-outline-secondary"
+                  data-bs-theme-value="light"><i class="bi bi-sun-fill"></i></i> Light</a></li>
+              <li><a onclick="dark()" class="dropdown-item btn btn-sm btn-outline-secondary"
+                  data-bs-theme-value="dark"><i class="bi bi-moon-stars-fill"></i> Dark</a></li>
+              <li><a onclick="auto()" class="dropdown-item btn btn-sm btn-outline-secondary"
+                  data-bs-theme-value="auto"><i class="bi bi-circle-half"></i> Auto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <button
+    class="btn bg-secondary bg-opacity-75 btn-sm rounded-pill shadow-sm position-fixed bottom-0 end-0 my-3 mx-3 mx-lg-5 mx-xl-5"
+    style="display:none; z-index: 99;" onclick="topFunction()" id="myBtn"><i
+      class="bi bi-caret-up-fill text-lg green"></i></button>
+
+  <div class="bg-body-tertiary text-center">
+
+    <div class="container-xxl">
+      <section class="splide m-auto bg-body-tertiary position-relative" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide"><img class="img-fluid w-100" src="img/slider/1.jpg"></li>
+            <li class="splide__slide"><img class="img-fluid w-100" src="img/slider/2.jpg"></li>
+          </ul>
+        </div>
+        <div
+          class="position-absolute top-50 start-50 translate-middle text-center shadow bg-primary bg-opacity-25 p-5 d-md-block d-none">
+          <div class="display-5 fw-semibold text-white">Prestige Home</div>
+          <div class="text-white">Мы предлагаем вам уникальные и изысканные решения для создания вашей идеальной кухни и
+            оформления интерьера</div>
+          <div class="d-flex justify-content-center mt-4">
+            <div class="btn text-dark bg-white rounded-0 me-5">Services</div>
+            <div class="btn text-white bg-primary rounded-0">About us</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container-xxl">
+      <div class="fs-2 p-2">Мы воплощаем <span class="text-primary" id="element"></span>в реальность</div>
+      <div class="h3 py-3">ОТ ПРОЕКТА ДО РЕАЛИЗАЦИИ</div>
+
+      <div class="row g-5">
+        <div class="col-12 col-md-6 col-xl-4 position-relative">
+          <img class="img-fluid" src="img/project/1.jpg">
+          <div class="position-absolute top-50 start-50 translate-middle text-center shadow bg-primary bg-opacity-25">
+            <div class="fs-4 py-5 text-white">1. Дизайн персонального проекта</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 position-relative">
+          <img class="img-fluid" src="img/project/2.jpg">
+          <div class="position-absolute top-50 start-50 translate-middle text-center shadow bg-primary bg-opacity-25">
+            <div class="fs-4 py-5 text-white">2. Подбор необходимых материалов</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 position-relative">
+          <img class="img-fluid" src="img/project/3.jpg">
+          <div class="position-absolute top-50 start-50 translate-middle text-center shadow bg-primary bg-opacity-25">
+            <div class="fs-4 py-5 text-white">3. Смета мебели</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 position-relative">
+          <img class="img-fluid" src="img/project/4.jpg">
+          <div class="position-absolute top-50 start-50 translate-middle text-center shadow bg-primary bg-opacity-25">
+            <div class="fs-4 py-5 text-white">4. Замер вашего помещения</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 position-relative">
+          <img class="img-fluid" src="img/project/5.jpg">
+          <div class="position-absolute top-50 start-50 translate-middle text-center shadow bg-primary bg-opacity-25">
+            <div class="fs-4 py-5 text-white">5. Согласование проекта</div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 position-relative">
+          <img class="img-fluid" src="img/project/6.jpg">
+          <div class="position-absolute top-50 start-50 translate-middle text-center shadow bg-primary bg-opacity-25">
+            <div class="fs-4 py-5 text-white">6. Доставка и установка мебели</div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="col-12 col-xl-6">
+          <div class="fs-1 text-primary fw-semibold">Наши услуги</div>
+          <div class="fs-5 text-start fw-semibold mt-3">ПРОФЕССИОНАЛЬНЫЕ КОНСУЛЬТАЦИИ</div>
+          <div class="fs-6 text-start mt-3">Первое, что мы хотим предложить Вам – это идею! Идею о том, что у любого
+            помещения и пространства может быть свой уникальный климат, который близок хозяевам и всецело дополняет их
+            образ.</div>
+          <div class="fs-5 text-start fw-semibold mt-5">ПОЛНОЦЕННЫЙ ДИЗАЙН-ПРОЕКТ</div>
+          <div class="fs-6 text-start mt-3">Мы готовы пройти все этапы от идеи до воплощения вместе с Вами и превзойти
+            ожидания. Современный дизайн, проработанный до мелочей, учитывающий все предпочтения – это то, что мы
+            делаем. Не нужно нанимать отдельные компании и бригады для реализации разных задач, мы займёмся вашим
+            ремонтом от и до.</div>
+          <div class="fs-5 text-start fw-semibold mt-5">КОНСТРУКТОРСКОЕ БЮРО</div>
+          <div class="fs-6 text-start mt-3">Проектирование мебели разного предназначения: кухни, гардеробной, прихожей
+            или мебели в ванную. Профессиональная команда дизайнеров и технологов запроектирует для Вас качественную
+            мебель и обеспечит исполнение вашего заказа в срок.</div>
+          <div class="btn btn-lg btn-outline-primary rounded-0 my-4">OUR HISTORY</div>
+        </div>
+        <div class="col-12 col-xl-6">
+          <img class="img-fluid w-100" src="img/rek.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="position-relative">
+        <img class="img-fluid w-100" src="img/slider/2.jpg">
+        <div class="position-absolute top-50 start-50 translate-middle text-center shadow bg-primary bg-opacity-25 p-5 d-md-block d-none">
+          <div class="h3 fw-semibold text-white">КУХНИ и ТЕХНИКИ ИЗ ГЕРМАНИИ!</div>
+          <div class="text-white">Мы официальные дилеры компании „Häcker“ которая производит современные встроенные кухни. Немецкие кухни „Häcker“ отвечают самым высоким требованиям по качеству, функциональности, долговечности и дизайну.</div>
+          <div class="d-flex justify-content-center mt-4">
+            <div class="btn btn-outline-light rounded-0">Contact</div>
+          </div>
+        </div>
+      </div>
+
+
+  
+    </div>
+  </div>
+
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['фантазии', 'желания', 'мечты'],
+      backSpeed: 75,
+      typeSpeed: 140,
+      loop: true
+    });
+  </script>
+
+  <footer class="container-fluid d-flex justify-content-center align-items-center bg-body pt-5 mt-5">
+    <div class="container-xxl row">
+
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+        <div class="fs-3 fw-bold my-3">Prestige <span class="green">Home</span></div>
+        <p>15 этап, здание Рысгаллы, г. Aшгабад, Туркменистан</p>
+      </div>
+
+      <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
+        <div class="fs-3 fw-bold my-3">About <span class="green">us</span></div>
+        <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i> Company
+          Profile</a>
+        <br>
+        <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i> CSR
+          Initiatives</a>
+        <br>
+        <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i> Read
+          Articles</a>
+      </div>
+
+      <div class="col-12 col-sm-4 col-lg-4 col-xl-4">
+        <div class="fs-3 fw-bold my-3">Connect</div>
+        <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i> Company
+          Profile</a>
+        <br>
+        <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i> CSR
+          Initiatives</a>
+        <br>
+        <a class="text-decoration-none green" href="#"><i class="bi bi-chevron-right text-secondary"></i> Read
+          Articles</a>
+      </div>
+
+      <div class="d-flex justify-content-center my-3">
+        <div><a class="text-decoration-none green" href="#"><i class="bi bi-instagram"></i></a></div>
+        <div class="mx-2"><a class="text-decoration-none green" href="#"><i class="bi bi-tiktok"></i></a></div>
+        <div><a class="text-decoration-none green" href="#"><i class="bi bi-twitter"></i></a></div>
+        <div class="mx-2"><a class="text-decoration-none green" href="#"><i class="bi bi-facebook"></i></a></div>
+      </div>
+      <hr class="border-2">
+      <div class="text-center mb-3">© 2024 All rights reserved | Designed by <a href="https://alemtilsimat.com/"
+          class="green">Alem Tilsimat</a></div>
+    </div>
+  </footer>
+</body>
+<script>
+  var splide = new Splide('.splide', {
+    type: 'loop',
+    autoplay: true,
+    arrows: false,
+  });
+  splide.mount();
+</script>
+
+
+<script>
+  let mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+
+<script>
+  window.addEventListener('scroll', () => {
+    const verticalScrollPx = window.scrollY || window.pageYOffset;
+
+    if (verticalScrollPx > 50) {
+      var element = document.getElementById("nav");
+      element.classList.add("bg-body");
+    } else {
+      var element = document.getElementById("nav");
+      element.classList.remove("bg-body");
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener("resize", function () {
+    "use strict"; window.location.reload();
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    /////// Prevent closing from click inside dropdown
+    document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+      element.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+    })
+    // make it as accordion for smaller screens
+    if (window.innerWidth < 992) {
+      // close all inner dropdowns when parent is closed
+      document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+        everydropdown.addEventListener('hidden.bs.dropdown', function () {
+          // after dropdown is hidden, then find all submenus
+          this.querySelectorAll('.submenu')
+            .forEach(function (everysubmenu) {
+              // hide every submenu as well
+              everysubmenu
+                .style
+                .display =
+                'none';
+            });
+        })
+      });
+      document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+        element.addEventListener('click', function (e) {
+          let nextEl = this.nextElementSibling;
+          if (nextEl && nextEl.classList
+            .contains('submenu')) {
+            // prevent opening link if link needs to open dropdown
+            e.preventDefault();
+            console.log(nextEl);
+            if (nextEl.style.display ==
+              'block') {
+              nextEl.style.display =
+                'none';
+            }
+            else {
+              nextEl.style.display =
+                'block';
+            }
+          }
+        });
+      })
+    }
+    // end if innerWidth
+  });
+         // DOMContentLoaded  end
+</script>
+
+
+<script>
+  // active
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("nav-link");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active text-body");
+      current[0].className = current[0].className.replace(" active text-body", "");
+      this.className += " active text-body";
+    });
+  }
+
+</script>
+<script>
+  // active
+  var header2 = document.getElementById("myDIV2");
+  var btns2 = header2.getElementsByClassName("nav-link");
+  for (var i = 0; i < btns2.length; i++) {
+    btns2[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active text-body");
+      current[0].className = current[0].className.replace(" active text-body", "");
+      this.className += " active text-body";
+    });
+  }
+
+</script>
+
+<script>
+  function first() {
+    var element = document.getElementById("third");
+    element.classList.add("d-none");
+    var element = document.getElementById("second");
+    element.classList.add("d-none");
+    var element = document.getElementById("first");
+    element.classList.remove("d-none");
+  }
+
+  function second() {
+    var element = document.getElementById("third");
+    element.classList.add("d-none");
+    var element = document.getElementById("first");
+    element.classList.add("d-none");
+    var element = document.getElementById("second");
+    element.classList.remove("d-none");
+  }
+
+  function third() {
+    var element = document.getElementById("third");
+    element.classList.remove("d-none");
+    var element = document.getElementById("first");
+    element.classList.add("d-none");
+    var element = document.getElementById("second");
+    element.classList.add("d-none");
+  }
+
+</script>
+<script>
+  function first2() {
+    var element = document.getElementById("third2");
+    element.classList.add("d-none");
+    var element = document.getElementById("second2");
+    element.classList.add("d-none");
+    var element = document.getElementById("first2");
+    element.classList.remove("d-none");
+  }
+
+  function second2() {
+    var element = document.getElementById("third2");
+    element.classList.add("d-none");
+    var element = document.getElementById("first2");
+    element.classList.add("d-none");
+    var element = document.getElementById("second2");
+    element.classList.remove("d-none");
+  }
+
+  function third2() {
+    var element = document.getElementById("third2");
+    element.classList.remove("d-none");
+    var element = document.getElementById("first2");
+    element.classList.add("d-none");
+    var element = document.getElementById("second2");
+    element.classList.add("d-none");
+  }
+
+</script>
+<script>
+  AOS.init();
+</script>
+
+</html>
